@@ -317,7 +317,7 @@
 				class="section my-0" 
 				x-data="{ puppies: [] }"
 				x-init="
-					fetch('http://sandownpetcentre.co.za/puppies/wp-json/wp/v2/posts?_embed')
+					fetch('https://sandownpetcentre.co.za/puppies/wp-json/wp/v2/posts?_embed')
 						.then(res => res.json())
 						.then(data => data.forEach(puppy => puppies.push(puppy)))
 				"
